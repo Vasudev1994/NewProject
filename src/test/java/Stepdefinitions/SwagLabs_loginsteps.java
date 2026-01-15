@@ -17,7 +17,7 @@ public class SwagLabs_loginsteps {
 	
 	WebDriver driver;
 	Swaglabs_loginpage swp;
-	@Test
+	
 	@Given("user should access swaglabs url")
 	public void user_should_access_swaglabs_url() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
@@ -30,7 +30,7 @@ public class SwagLabs_loginsteps {
 			    
 	}
 
-	@Test
+
 	@When("user should enter username as {string} and password as {string}")
 	public void user_should_enter_username_as_and_password_as(String Username, String Password) throws InterruptedException {
 		swp.username(Username);
@@ -39,7 +39,7 @@ public class SwagLabs_loginsteps {
 	    
 	}
 
-	@Test
+	
 	@Then("user should click on login button")
 	public void user_should_click_on_login_button() throws InterruptedException {
 		swp.loginbtn();
@@ -47,7 +47,7 @@ public class SwagLabs_loginsteps {
 	    
 	}
 
-	@Test
+	
 	@And("user should verfiy homepage title as {string}")
 	public void user_should_verfiy_homepage_title_as(String title) throws InterruptedException {
 		
@@ -62,7 +62,7 @@ public class SwagLabs_loginsteps {
 	    
 	}
 	
-	@Test
+	
 	@Then("user should click on Sauce Labs Backpack")
 	public void user_should_click_on_sauce_labs_backpack() throws InterruptedException {
 		swp.Backpackitem();
@@ -70,7 +70,7 @@ public class SwagLabs_loginsteps {
 	    
 	}
 	
-	@Test
+	
 	@Then("user should click on add to cart")
 	public void user_should_click_on_add_to_cart() throws InterruptedException {	    
 		swp.Addtocart();
@@ -78,7 +78,7 @@ public class SwagLabs_loginsteps {
 	}
 	
 
-	@Test
+	
 	@Then("user should click on addcart icon")
 	public void user_should_click_on_addcart_icon() throws InterruptedException {
 		swp.cartlink();
@@ -87,7 +87,7 @@ public class SwagLabs_loginsteps {
 	}
 	
 
-	@Test
+	
 	@Then("user should click on checkout button")
 	public void user_should_click_on_checkout_button() throws InterruptedException {
 		swp.checkout();
@@ -96,7 +96,7 @@ public class SwagLabs_loginsteps {
 	}
 	
 
-	@Test
+	
 	@Then("user should enter firstname as {string}")
 	public void user_should_enter_firstname_as(String Name) throws InterruptedException {
 		swp.Firstname(Name);
@@ -105,28 +105,28 @@ public class SwagLabs_loginsteps {
 	}
 	
 
-	@Test
+	
 	@Then("user should enter lastname as {string}")
 	public void user_should_enter_lastname_as(String LName) throws InterruptedException {
 	    swp.Lastname(LName);
 	    Thread.sleep(2000);
 	}
 
-	@Test
+	
 	@Then("user should enter postal code as {string}")
 	public void user_should_enter_postal_code_as(String postal) throws InterruptedException {
 	    swp.postalcode(postal);
 	    Thread.sleep(2000);
 	}
 
-	@Test
+	
 	@Then("user should click on continue button")
 	public void user_should_click_on_continue_button() throws InterruptedException {
 	    swp.Continue();
 	    Thread.sleep(2000);
 	}
 
-	@Test
+	
 	@Then("user should click on finish button")
 	public void user_should_click_on_finish_button() throws InterruptedException {
 		swp.Finish();
@@ -134,7 +134,7 @@ public class SwagLabs_loginsteps {
 	    
 	}
 
-	@Test
+	
 	@And("user should verify message as {string}")
 	public void user_should_verify_message_as(String Message) throws InterruptedException {
 		
